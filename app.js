@@ -9,6 +9,9 @@ const server = app.listen(port, () => console.log(`Example app listening on port
 server.keepAliveTimeout = 120 * 1000;
 server.headersTimeout = 120 * 1000;
 
+import cors from "cors";
+app.use(cors()); 
+
 const html = `
 <!DOCTYPE html>
 <html>
